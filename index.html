@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body style="">
+    <div class="container">
+        <div id="draw" class="draw-container">
+            <div style="position: absolute" class="btn-group">
+                <a href="javascript:;" id="j-default" title="点击会删除已选择答案">默认答案</a>
+                <a href="javascript:;" id="j-reset">重置</a>
+                <a href="javascript:;" id="j-submit" class="btn-submit">确定</a>
+            </div>
+            <ul class="question-list data-list">
+                <li class="question-li selected" data-question="1+1" data-answer="2" data-selected="2">1+1</li>
+                <li class="question-li selected" data-question="2+2" data-answer="4" data-selected="1">2+2</li>
+            </ul>
+            <ul class="answer-list data-list">
+                <li class="answer-li selected" data-answer="1">1</li>
+                <li class="answer-li selected" data-answer="2">2</li>
+                <li class="answer-li" data-answer="3">3</li>
+                <li class="answer-li" data-answer="4">4</li>
+            </ul>
+            <i class="remove-btn" style="left: 504.5px; top: 122.5px; display: none;"></i>
+        </div>
+        <div class="result-container">
+            <h3>您的答案是：</h3>
+            <ul class="result-display"></ul>
+        </div>
+    </div>
+
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./js/svg.min.js"></script>
+    <script src="./js/line.js"></script>
+    
+</body>
+
+</html>
